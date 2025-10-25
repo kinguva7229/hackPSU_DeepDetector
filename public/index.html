@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>sha-256 image compare</title>
+</head>
+
+<style>
+    h2 {
+        margin-bottom: 0;
+        font-size: 24px;
+    }
+</style>
+
+<body style="font-family:sans-serif;text-align:center;margin-top:60px;">
+    <p>deep<strong>detector</strong></p>
+    <h2>compare two images by sha-256 indentifiers</h2>
+
+    <!-- form to upload exactly two images -->
+    <form action="/compare" method="POST" enctype="multipart/form-data">
+        <p><b>upload original image:</b></p>
+        <input type="file" name="files" accept="image/*" required><br><br>
+
+        <p><b>upload ai version image:</b></p>
+        <input type="file" name="files" accept="image/*" required><br><br>
+
+        <button type="submit">compare</button>
+    </form>
+</body>
+
+</html>
