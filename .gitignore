@@ -1,3 +1,14 @@
+# Ignore environments and checkpoints
 venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.DS_Store
+
+# Ignore model weights and checkpoints
 model/
 tmp_checkpoint/
+
+# Ignore large local folders
+fresh_clone/
